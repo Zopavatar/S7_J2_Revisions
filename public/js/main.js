@@ -699,3 +699,49 @@ console.log(reductionTab.reduce((a, b) => a + b));
 
 
 
+
+
+
+
+//FUNCTION
+//exo1
+function bonjour(){
+    console.log("bonjour");
+}
+
+bonjour();
+
+
+//exo2
+function calcul(){
+    let calcul = 5+5;
+    console.log(calcul);
+}
+
+calcul();
+
+
+//exo3
+function salutation(appelation){
+    console.log(`Bonjour,${appelation}`);
+}
+
+salutation("Peter");
+
+
+//exo4
+function type(element1,element2,element3){
+    console.log(typeof element1);
+    console.log(typeof element2);
+    console.log(typeof element3);
+}
+
+type("cacahuète",42,true);
+
+
+
+
+//LOGIQUE
+
+//Exo1
+
