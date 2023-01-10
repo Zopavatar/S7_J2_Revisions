@@ -606,7 +606,7 @@ laCoding13.forEach(element =>{
 
 //Exo8
 //part 1
-let liste =["Paul", "Pierre","Pierre","Jacques","Lucette","Octavio","Jeannine","Odette","Auguste"];
+let liste =["paul", "pierre","jacques","lucette","olaf","jeannine","odette","auguste"];
 
 liste.forEach(element => {
     console.log(element);
@@ -618,7 +618,84 @@ liste.forEach(element => {
 console.log("INDICE PAIR:")
 
 liste.forEach(element => {if(liste.indexOf(element)%2 == 0){console.log(element)}});
-    
+
+//part 2
+//1
+liste.forEach(element => {
+    if(liste.indexOf(element)%2 == 1){
+        console.log(element.toUpperCase());
+    }
+});
+
+//2
+liste.forEach(element => {
+    if(liste.indexOf(element)%2 == 0){
+        console.log(element[0].toUpperCase() + element.substring(1));
+    }
+});
+
+//3
+liste.forEach(element => {
+    if(liste.indexOf(element)%2 == 1 && element.length > 4){
+        console.log(element);
+    }
+});
+
+//4
+liste.forEach(element => {
+    if(liste.indexOf(element)%2 == 0 && element.length > 4){
+        console.log(element[0].toUpperCase());
+    }
+});
+
+//5
+liste.forEach(element => {
+    if(element[0] == "a" || element[0] == "b" || element[0] == "c" || element[0] == "d" || element[0] == "e" || element[0] == "f"){
+        console.log(element);
+    }
+});
+
+//6
+liste.forEach(element => {
+    if(element.length > 10 && (element[0] == "a" || element[0] == "b" || element[0] == "c" || element[0] == "d" || element[0] == "e" || element[0] == "f")){
+        console.log(element);
+    }
+});
+
+
+//part3
+//1
+liste.forEach(element => {
+    if(element.length < 5 && (element[0] == "a" || element[0] == "b" || element[0] == "c" || element[0] == "d" || element[0] == "e" || element[0] == "f")){
+        console.log(element[0].toUpperCase() + element.substring(1));
+    }
+});
+
+//2
+liste.forEach(element => {
+    if(liste.indexOf(element)%2 == 1 && element.length > 4 && (element[0] == "k" || element[0] == "c" || element[0] == "m" || element[0] == "f" || element[0] == "y" || element[0] == "n" || element[0] == "a" || element[0] == "e" || element[0] == "p" || element[0] == "o")){
+        console.log(element);
+    }
+});
+
+//3
+liste.forEach(element => {
+    if(liste.indexOf(element)%2 == 0 && element.length > 5 && (element[0] == "k" || element[0] == "c" || element[0] == "m" || element[0] == "f" || element[0] == "y" || element[0] == "n" || element[0] == "a" || element[0] == "e" || element[0] == "p" || element[0] == "o")){
+        console.log((element[0].toLowerCase() + element[1].toUpperCase() + element.substring(2)).substring(0,element.length-1) + element[element.length-1].toUpperCase());
+    }
+});
+
+
+//4
+let reductionTab = [];
+
+liste.forEach(element => {
+    if(liste.indexOf(element)%2 == 0 && element.length < 7 && (element[0] == "k" || element[0] == "m" || element[0] == "f" || element[0] == "y" || element[0] == "n" || element[0] == "a" || element[0] == "e" || element[0] == "o")){
+        reductionTab.push(element[0].toLowerCase() + element[1].toUpperCase());
+    }
+});
+
+console.log(reductionTab.reduce((a, b) => a + b));
 
 
 
