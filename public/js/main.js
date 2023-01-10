@@ -48,6 +48,9 @@ alert(ask[0].toUpperCase()+(ask.substring(1)).toLowerCase());*/
 
 
 
+
+
+
 //ARRAY
 
 //EXO 1
@@ -159,7 +162,7 @@ console.log(newTab);
 
 
 //EXO 5
-let classe = [];
+/*let classe = [];
 
 let jean = "Jean";
 classe.push(jean);
@@ -255,8 +258,144 @@ console.log(autreClasse);
 
 
 console.log(classe);
-console.log(autreClasse);
+console.log(autreClasse);*/
 
+
+
+
+
+
+
+
+//SWITCH
+
+//Exo 1
+/*let age = prompt("Quel est votre age ?");
+
+switch (true) {
+    case age == 18:
+        console.log("Tu es majeur");
+        break;
+    
+    case age == 25:
+        console.log("Un quart de siècle, ça se fête ! (Tu te sens vieux, Quadri ?");
+        break;
+
+    case age == 50:
+        console.log("1/2 siècle, c'est quelques chose");
+        break;
+}*/
+
+
+//Exo 2
+/*let mot = prompt("DOnnez un mot, làààà");
+
+switch (true){
+    case typeof (mot*1) == "number":
+        console.log("La valeur indiquée est un nombre");
+        break;
+
+    case typeof mot == "string":
+        console.log("La valeur indiquée est un string");
+        break;
+
+    default:
+        console.log("C'est un autre truc");
+        break;
+}*/
+
+
+//Exo 3
+const date = new Date();
+let day = date.getDay();
+
+switch (true){
+    case day == 1:
+        console.log("Lundi");
+        break;
+    case day == 2:
+        console.log("Mardi");
+        break;
+    case day == 3:
+        console.log("Mercredi");
+        break;
+    case day == 4:
+        console.log("Jeudi");
+        break;
+    case day == 5:
+        console.log("Vendredi");
+        break;
+    case day == 6:
+        console.log("samedi");
+        break;
+    case day == 7:
+        console.log("Dimanche");
+        break;
+    default:
+        console.log("Lundi");
+        break;
+}
+
+
+//Exo 4
+
+/*let mdp = prompt("Donnez un mdp");
+let login = prompt("Entrez votre mdp");
+
+switch (true) {
+    case mdp == login:
+        alert("connecté");
+        break;
+
+    case mdp !== login:
+        alert("Erreur de mot de passe");
+        break;
+}*/
+
+
+//Exo 5
+let niveau = 75;
+
+switch (true){
+    case niveau >= 90:
+        console.log("Tu as un niveau de coach");
+        break;
+
+    case niveau >= 70:
+        console.log("Tu peux mieux faire");
+        break;
+
+    case niveau >= 50:
+        console.log("Attention, il faut travailler plus !");
+        break;
+
+    default:
+        console.log("C'est pas boooooon. A travailler d'avantage");
+        break;
+}
+
+
+//exo 6
+
+/*let result = prompt("Quel est le résultat du test ? A, B, C ou D ?");
+
+switch(true){
+    case result == "A":
+        console.log("Ha ouaaaais");
+        break;
+    case result == "B":
+        console.log("Pas mal !");
+        break;
+    case result == "C":
+        console.log("Mouais");
+        break;
+    case result == "D":
+        console.log("Vraiment pas dingue...");
+        break;
+    default:
+        console.log("Veuillez entrer une note");
+        break;
+}*/
 
 
 
