@@ -399,3 +399,226 @@ switch(true){
 
 
 
+
+
+//IF ELSE
+
+//Exo 1
+let prenom = "Charlotte";
+
+if (prenom == "Charlotte"){
+}
+
+
+//Exo 2
+if (prenom == "Charlotte"){
+    console.log("Je suis dans le if");
+}
+
+console.log(prenom);
+
+
+//Exo 3
+let agePerso1 = 30;
+let agePerso2 = 40;
+let comparaison = (agePerso1 == agePerso2);
+
+if(comparaison == true){
+    console.log("Je suis dans le if");
+}
+else{
+    console.log("Je suis dans le else");
+}
+
+//logique
+
+//1
+/*let chiffre1 = prompt("Donnez un chiffre");
+let chiffre2 = prompt("Donnez un autre chiffre");
+
+if (isNaN(chiffre1) == true || isNaN(chiffre2) == true){
+    console.log("C'est pas un chiffre, petit filou");
+} else if (chiffre1 > chiffre2){
+    console.log(chiffre1);
+} else if (chiffre2 > chiffre1){
+    console.log(chiffre2);
+} else if (chiffre1 == chiffre2){
+    console.log("C'est pas un chiffre, tête de noeudLes deux chiffres sont égaux");
+} */
+
+//2
+/*let chiffre1 = prompt("Donnez un chiffre");
+
+if(chiffre1%2 == 1){
+    console.log("ce chiffre est impair");
+}else{
+    console.log("Ce chiffre est pair");
+}*/
+
+
+//3
+/*let elPrenom = prompt("DOnnez votre prénom, please");
+
+if(elPrenom.length < 5){
+    console.log("Votre prénom a moins de 5 caractères");
+} else if(elPrenom.length == 5){
+    console.log("Votre prénom fait 5 caractères");
+} else if(elPrenom.length > 5){
+    console.log("Votre prénom fait plus de 5 caractères");
+}*/
+
+
+//4
+/*let prenom1 = prompt("Donnez un prénom, siouplait");
+let prenom2 = prompt("Donnez un second prénom, siouplait");
+
+if(prenom1.length < prenom2.length){
+    console.log(`Le prenom ${prenom1} a moins de caractères que le prénom ${prenom2}`);
+} else if(prenom1.length == prenom2.length){
+    console.log(`Le prenom ${prenom1} a autant de caractères que le prénom ${prenom2}`);
+} else if(prenom2.length < prenom1.length){
+    console.log(`Le prenom ${prenom1} a plus de caractères que le prénom ${prenom2}`);
+}*/
+
+
+//5
+let vitesse = 90;
+
+if(vitesse < 50){
+    console.log(`C'est good, vous pouvez continuer à rouler à cette vitesse. vitesse => ${vitesse} km/h`);
+} else if(vitesse == 50){
+    console.log(`Attention, vous roulez à la vitesse limite. vitesse => ${vitesse} km/h`);
+} else if(vitesse > 50){
+    console.log(`C'est pas good ça, vous devez décélérer, 'spèce de Fangio. vitesse => ${vitesse} km/h`);
+}
+
+
+//6
+/*let demandePrenom = prompt("Quel est votre prénom ?");
+let demandeAge = prompt("Quel est votre age ?");
+
+if(demandeAge >= 18){
+    console.log(`Salut,${demandePrenom}! Vu que tu as ${demandeAge} ans, ce soir tu peux sortir en discothèque`);
+}else if(demandeAge < 18){
+    console.log(`Salut,${demandePrenom}! Vu que tu as seulement ${demandeAge} ans, ce soir tu peux pleurer ton seum dans ta chambre.`);
+}*/
+
+
+//7
+/*let unNombre = prompt("Donnez un nombre");
+let unAutre = prompt("Donnez un nombre");
+let operateur = prompt("Donnez un opérateur: * - + ou /");
+
+
+if (operateur == "*"){
+    console.log(`${unNombre} * ${unAutre} = ${unNombre*unAutre}`);
+} else if (operateur == "-"){
+    console.log(`${unNombre} - ${unAutre} = ${unNombre-unAutre}`);
+} else if (operateur == "/"){
+    console.log(`${unNombre} / ${unAutre} = ${unNombre/unAutre}`);
+} else if (operateur == "+"){
+    console.log(`${unNombre} + ${unAutre} = ${(unNombre*1)+(unAutre*1)}`);
+}*/
+
+
+
+
+
+
+//BOUCLES
+
+//Exo 1
+for(let i = 0 ; i < 5 ; i++){
+    console.log("Charlotte");
+    console.log(i);
+}
+
+//Exo2
+let arrayCoding27 = ["Enide","Charlotte","Fadia"];
+
+for (let i = 0; i < arrayCoding27.length; i++){
+    console.log(`Bonjour ${arrayCoding27[i]}`);
+}
+
+//Exo3
+/*let number = prompt("Entrez un nombre");
+let i = -1;
+
+while (i < number){
+    i++;
+    console.log(i);
+}
+
+//Exo4
+for (let i = 0; i <= number; i+=2){
+    console.log(i);
+}
+
+//Exo5
+for (let i = 0; i <= number; i++){
+    console.log(i);
+
+    if(i > 0 && i%2 == 0){
+        console.log(`Le nombre ${i} est pair`);
+    }
+}*/
+
+//Exo6
+let molengeek = [];
+let eleve = 0;
+
+do {
+    eleve++;
+
+    molengeek.push(`etudiant ${eleve}`);
+} while (molengeek.length < 5);
+
+console.log(molengeek);
+
+
+//Exo7
+let laCoding13 = ["Martin","Maxime","Jordano","Yasmina","Kawtar","Valentin","Oussam","Cactus","Fanny","Sergen","Karis","Kadri","Piere","Zidane","Imad","Abdel"];
+
+laCoding13.forEach(element =>{
+    if (laCoding13.indexOf(element) == 0){
+        console.log(`L'index de ${element} est null`);
+    } else if(laCoding13.indexOf(element)%2 == 0){
+        console.log(`L'index de ${element} est pair`);
+    } else {
+        console.log(`L'index de ${element} est impair`);
+    }
+});
+
+console.log("INDICES PAIRS:");
+laCoding13.forEach(element =>{
+    if (laCoding13.indexOf(element)%2 == 0){
+        console.log(element);
+    }
+});
+
+console.log("INDICES IMPAIRS:");
+laCoding13.forEach(element =>{
+    if (laCoding13.indexOf(element)%2 == 1){
+        console.log(element);
+    }
+});
+
+
+//Exo8
+//part 1
+let liste =["Paul", "Pierre","Pierre","Jacques","Lucette","Octavio","Jeannine","Odette","Auguste"];
+
+liste.forEach(element => {
+    console.log(element);
+    console.log(element[0]);
+    console.log(element[1]); 
+    console.log(element[1]+element);
+});
+
+console.log("INDICE PAIR:")
+
+liste.forEach(element => {if(liste.indexOf(element)%2 == 0){console.log(element)}});
+    
+
+
+
